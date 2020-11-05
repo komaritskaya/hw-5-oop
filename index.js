@@ -18,23 +18,25 @@ var meal = new Meal();
 
 // var someItem = new AbstractMealItem(); // Error
 
-console.log(firstBurger.name); // big burger with potato
-console.log(firstBurger.price); // 115
-console.log(firstBurger.calories); // 50
+console.log(firstBurger.getName()); // big burger with potato
+console.log(firstBurger.getPrice()); // 115
+console.log(firstBurger.getCalories()); // 50
 console.log(firstBurger.getSize()); // big
 console.log(firstBurger.getStuffing()); // potato
 // firstBurger.viewOptions();
 
-console.log(firstSalad.name); // caesar salad, 100g
-console.log(firstSalad.price); // 100
-console.log(firstSalad.calories); // 20
+console.log(firstSalad.getName()); // caesar salad, 100g
+console.log(firstSalad.getPrice()); // 100
+console.log(firstSalad.getCalories()); // 20
+console.log(firstSalad.getPricePer100g()); // 100
+console.log(firstSalad.getCaloriesPer100g()); // 20
 console.log(firstSalad.getType()); // caesar
 console.log(firstSalad.getWeight()); // 100
 // firstSalad.viewOptions();
 
-console.log(firstDrink.name); // coke
-console.log(firstDrink.price); // 50
-console.log(firstDrink.calories); // 40
+console.log(firstDrink.getName()); // coke
+console.log(firstDrink.getPrice()); // 50
+console.log(firstDrink.getCalories()); // 40
 // firstDrink.viewOptions();
 
 meal.addItem(secondBurger); // ok
