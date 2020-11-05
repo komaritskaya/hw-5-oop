@@ -21,5 +21,8 @@ Burger.prototype.getStuffing = function () {
 };
 
 Burger.options = BurgerOptions;
+Burger.prototype.viewBurgerOptions = function () {
+  this.viewOptions(BurgerOptions);
+}
 
 module.exports = Burger;

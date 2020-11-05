@@ -23,7 +23,7 @@ console.log(firstBurger.getPrice()); // 115
 console.log(firstBurger.getCalories()); // 50
 console.log(firstBurger.getSize()); // big
 console.log(firstBurger.getStuffing()); // potato
-// firstBurger.viewOptions();
+firstBurger.viewBurgerOptions(); // Your options are ...
 
 console.log(firstSalad.getName()); // caesar salad, 100g
 console.log(firstSalad.getPrice()); // 100
@@ -32,12 +32,12 @@ console.log(firstSalad.getPricePer100g()); // 100
 console.log(firstSalad.getCaloriesPer100g()); // 20
 console.log(firstSalad.getType()); // caesar
 console.log(firstSalad.getWeight()); // 100
-// firstSalad.viewOptions();
+firstSalad.viewSaladOptions(); // Your options are ...
 
 console.log(firstDrink.getName()); // coke
 console.log(firstDrink.getPrice()); // 50
 console.log(firstDrink.getCalories()); // 40
-// firstDrink.viewOptions();
+firstDrink.viewDrinkOptions(); // Your options are ...
 
 meal.addItem(secondBurger); // ok
 meal.removeItem(secondBurger); // ok

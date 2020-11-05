@@ -6,6 +6,7 @@ function AbstractMealItem(name, price, calories) {
   this.name = name || 'Unknown item';
   this.price = price || 0;
   this.calories = calories || 0;
+  // this.options = options || {};
 }
 
 AbstractMealItem.prototype.getName = function() {
@@ -20,15 +21,15 @@ AbstractMealItem.prototype.getCalories = function() {
   return this.calories;
 }
 
-// AbstractMealItem.prototype.viewOptions = function () {
-//   if (!this.options || !Object.keys(this.options)) {
-//     console.log('Sorry, no options left on this item');
-//     return;
-//   }
-//   var optionsString = Object.values(this.options).map(function(option) {
-//     return option.name + ': ' + option.price + 'mnt / ' + option.calories + 'cal';
-//   }).join('\n');
-//   console.log('Your options are:\n' + optionsString);
-// };
+AbstractMealItem.prototype.viewOptions = function (options) {
+  if (!options || !Object.keys(options)) {
+    console.log('Sorry, no options left on this item');
+    return;
+  }
+  var optionsString = Object.values(options).map(function(option) {
+    return option.name + ': ' + option.price + 'mnt / ' + option.calories + 'cal';
+  }).join('\n');
+  console.log('Your options are:\n' + optionsString);
+};
 
 module.exports = AbstractMealItem;

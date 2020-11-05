@@ -8,9 +8,12 @@ function Drink(drink) {
   this.calories = drink.calories;
 }
 
-Drink.options = DrinkOptions;
-
 Drink.prototype = Object.create(AbstractMealItem.prototype);
 Drink.prototype.constructor = Drink;
+
+Drink.options = DrinkOptions;
+Drink.prototype.viewDrinkOptions = function () {
+  this.viewOptions(DrinkOptions);
+}
 
 module.exports = Drink;

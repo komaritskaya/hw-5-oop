@@ -10,8 +10,6 @@ function Salad(type, weight) {
   this.weight = weight;
 }
 
-Salad.options = SaladOptions;
-
 Salad.prototype = Object.create(AbstractMealItem.prototype);
 Salad.prototype.constructor = Salad;
 
@@ -27,5 +25,10 @@ Salad.prototype.getPricePer100g = function () {
 Salad.prototype.getCaloriesPer100g = function () {
   return this.type.calories;
 };
+
+Salad.options = SaladOptions;
+Salad.prototype.viewSaladOptions = function () {
+  this.viewOptions(SaladOptions);
+}
 
 module.exports = Salad;
