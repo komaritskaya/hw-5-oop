@@ -6,7 +6,6 @@ function AbstractMealItem(name, price, calories) {
   this.name = name || 'Unknown item';
   this.price = price || 0;
   this.calories = calories || 0;
-  // this.options = options || {};
 }
 
 AbstractMealItem.prototype.getName = function() {

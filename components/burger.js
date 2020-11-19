@@ -2,7 +2,7 @@ var AbstractMealItem = require('./abstract-meal-item');
 var BurgerOptions = require('../constants').BurgerOptions;
 
 function Burger(size, stuffing) {
-  AbstractMealItem.call(this, size, stuffing);
+  AbstractMealItem.call(this);
   this.name = size.name + ' burger with ' + stuffing.name;
   this.price = size.price + stuffing.price;
   this.calories = size.calories + stuffing.calories;

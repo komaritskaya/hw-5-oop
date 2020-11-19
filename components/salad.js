@@ -2,7 +2,7 @@ var AbstractMealItem = require('./abstract-meal-item');
 var SaladOptions = require('../constants').SaladOptions;
 
 function Salad(type, weight) {
-  AbstractMealItem.call(this, type);
+  AbstractMealItem.call(this);
   this.name = type.name + ' salad, ' + weight.toString() + 'g';
   this.price = type.price / 100 * weight;
   this.calories = type.calories / 100 * weight;
