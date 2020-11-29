@@ -1,11 +1,7 @@
-function AbstractMealItem(name, price, calories) {
-  if (new.target === AbstractMealItem) { 
-    throw new Error(`Can't instantiate abstract item, only specific one.`);
-  }
-
-  this.name = name || 'Unknown item';
-  this.price = price || 0;
-  this.calories = calories || 0;
+function AbstractMealItem(type) {
+  this.name = type.name || 'Unknown item';
+  this.price = type.price || 0;
+  this.calories = type.calories || 0;
 }
 
 AbstractMealItem.prototype.getName = function() {

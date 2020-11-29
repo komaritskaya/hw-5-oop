@@ -1,11 +1,8 @@
 var AbstractMealItem = require('./abstract-meal-item');
 var DrinkOptions = require('../constants').DrinkOptions;
 
-function Drink(drink) {
-  AbstractMealItem.call(this);
-  this.name = drink.name;
-  this.price = drink.price;
-  this.calories = drink.calories;
+function Drink(type) {
+  AbstractMealItem.call(this, type);
 }
 
 Drink.prototype = Object.create(AbstractMealItem.prototype);

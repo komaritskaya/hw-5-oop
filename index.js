@@ -2,11 +2,10 @@ var Burger = require('./components/burger');
 var Salad = require('./components/salad');
 var Drink = require('./components/drink');
 var Meal = require('./components/meal');
-var AbstractMealItem = require('./components/abstract-meal-item');
 
 var firstBurger = new Burger(Burger.options.BIG, Burger.options.ADD_POTATO);
 var secondBurger = new Burger(Burger.options.SMALL, Burger.options.ADD_CHEESE);
-var thirdBurger = new Burger(Burger.options.SMALL, Burger.options.ADD_SALAD);
+var thirdBurger = new Burger(Burger.options.SMALL, Burger.options.ADD_LETTUCE);
 
 var firstSalad = new Salad(Salad.options.CAESAR, 100);
 var secondSalad = new Salad(Salad.options.RUSSIAN, 200);
@@ -15,8 +14,6 @@ var firstDrink = new Drink(Drink.options.COKE);
 var secondDrink = new Drink(Drink.options.COFFEE);
 
 var meal = new Meal();
-
-// var someItem = new AbstractMealItem(); // Error
 
 console.log(firstBurger.getName()); // big burger with potato
 console.log(firstBurger.getPrice()); // 115
@@ -28,9 +25,6 @@ firstBurger.viewBurgerOptions(); // Your options are ...
 console.log(firstSalad.getName()); // caesar salad, 100g
 console.log(firstSalad.getPrice()); // 100
 console.log(firstSalad.getCalories()); // 20
-console.log(firstSalad.getPricePer100g()); // 100
-console.log(firstSalad.getCaloriesPer100g()); // 20
-console.log(firstSalad.getType()); // caesar
 console.log(firstSalad.getWeight()); // 100
 firstSalad.viewSaladOptions(); // Your options are ...
 

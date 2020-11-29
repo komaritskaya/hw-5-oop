@@ -1,11 +1,11 @@
 var BurgerOptions = {
   SMALL: {
-    name: 'small',
+    name: 'small burger',
     price: 50,
     calories: 20,
   },
   BIG: {
-    name: 'big',
+    name: 'big burger',
     price: 100,
     calories: 40,
   },
@@ -14,8 +14,8 @@ var BurgerOptions = {
     price: 10,
     calories: 20,
   },
-  ADD_SALAD: {
-    name: 'salad',
+  ADD_LETTUCE: {
+    name: 'lettuce',
     price: 20,
     calories: 5
   },
@@ -28,12 +28,12 @@ var BurgerOptions = {
 
 var SaladOptions = {
   CAESAR: {
-    name: 'caesar',
+    name: 'caesar salad',
     price: 100,
     calories: 20,
   },
   RUSSIAN: {
-    name: 'russian',
+    name: 'russian salad',
     price: 50,
     calories: 80,
   },
